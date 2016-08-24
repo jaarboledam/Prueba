@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Julian Arboleda</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Galada"> 
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-logo">
+			<h1>Julian Arboleda <span class="header-logo-info">| Desarrollador Web</span></h1>
+		</div>
+		<span class="icon icon-bars icon-menu"></span>
+		<nav class="header-navbar">
+			<ul class="navbar-menu">
+				<li class="navbar-menu-item">
+					<a class="menu-link active" href="#inicio"><span class="menu-link-text">Inicio</span></a>
+				</li>
+				<li class="navbar-menu-item">
+					<a class="menu-link" href="#quien-soy"><span class="menu-link-text">Quien soy</span></a>
+				</li>
+				<li class="navbar-menu-item">
+					<a class="menu-link" href="#estudios"><span class="menu-link-text">Estudios</span></a>
+				</li>
+				<li class="navbar-menu-item">
+					<a class="menu-link" href="#experiencia"><span class="menu-link-text">Experiencia</span></a>
+				</li>
+				<li class="navbar-menu-item">
+					<a class="menu-link" href="#sobre-mi"><span class="menu-link-text">Sobre mi</span></a>
+				</li>
+				<li class="navbar-menu-item">
+					<a class="menu-link" href="#contacto"><span class="menu-link-text">Contacto</span></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="section-container">
+		<section id="inicio" class="content-wrapper">
+			<div id="background-img"></div>
+		</section>
+		
+		<section id="quien-soy" class="content-wrapper">
+			<div class="row">
+				<div class="col-6 cols">
+					<div class="flip">
+						<img class="rounded flip-img front" src="media/picture.jpg">
+						<img class="rounded flip-img back" src="media/picture2.jpg">
+					</div>
+				</div>
+				<div class="col-5 cols">
+					<p class="info">Mi nombre es Julian Arboleda y soy desarrollador web. Me apasiona la tecnología y amo la programación, especialmente FrontEnd. Javascript es el lenguaje que más uso en mi día a día, adoro su flexibilidad y todo lo que se puede lograr con él. Me gusta mucho capacitarme constantemente y así estar siempre a la vanguardia.</p>
+				</div>
+			</div>
+		</section>
+		
+		<section id="estudios" class="content-wrapper">
+			<div class="row">
+				<div class="col-6 cols">
+					<figure class="thumbnail">
+						<img src="media/logo_sena.png" alt="SENA">
+            <figcaption>
+              <h1 class="title">Tecnólogo en análisis y desarrollo de sistemas de información.</h1>
+              <small class="date">2014 - 2016</small>
+            </figcaption>
+					</figure>
+				</div>
+				<div class="col-6 cols">
+					<figure class="thumbnail">
+						<img src="media/logo_unitecnica.png" alt="Unitecnica">
+            <figcaption>
+            	<h1 class="title">Técnico en sistemas</h1>
+              <small class="date">2012 - 2014</small>
+            </figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+		
+		<section id="experiencia" class="content-wrapper">
+			<div class="row center">
+				<div class="col-6 cols float-center">
+					<figure class="thumbnail">
+						<img src="media/logo_bpmco.png" alt="BPMCo">
+            <figcaption>
+            	<h1 class="title">Desarrollador web</h1>
+              <small>
+              	<p><span class="bolder">FrontEnd: </span> HTML5, CSS3, Javascript, jQuery, Bootstrap, Foundation, Materialize, RWD</p>
+              	<p><span class="bolder">BackEnd: </span> C#, SQLServer, PHP, MySQL</p>
+            	</small>
+            </figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+		
+		<section id="sobre-mi" class="content-wrapper inverse">
+			<div class="row">
+				<div class="col-6 cols">
+					<h1 class="title">Intereses...</h1>
+					<p>Me gusta mucho el fútlbol y disfruto además de verlo, practicarlo; especialmente las presentaciones callejeras o de fútbol de salón donde se puede apreciar muy buenas habilidades con el balón.</p>
+				</div>
+				<div class="col-6 cols">
+					<video width="550" height="300" controls>
+					  <source src="media/SeanGarnier.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</section>
+		
+		<section id="contacto" class="content-wrapper">
+			<div class="row center">
+				<div class="col-6 cols float-center">
+					<form class="form" id="contact-form" name="contact-form" method="get" novalidate>
+	          <div class="form-row">
+	            <label for="txtNombre">Nombre</label>
+	            <input type="text" id="txtNombre" name="txtNombre" placeholder="Escribe tu nombre" required>
+	          </div>
+	          <div class="form-row">
+	            <label for="txtEmail">Email</label>
+	            <input type="email" id="txtEmail" name="txtEmail" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+	          </div>
+	          <div class="form-row">
+	            <label for="txtContacto">Número de contacto</label>
+	            <input type="tel" name="txtContacto" id="txtContacto" placeholder="Escribe tu número" pattern="^[0-9]*" required>
+	          </div>
+	          <div class="form-row">
+	            <label for="selConocido">¿Cómo me has conocido?</label>
+	            <select name="selConocido" id="selConocido">
+	            	<option value="" selected disabled>Selecciona</option>
+	            	<option value="amigo">Por medio de un amigo</option>
+	            	<option value="casualidad">Por casualidad</option>
+	            	<option value="anuncio">Ví un anuncio</option>
+	            	<option value="otro">Otro</option>
+	            </select>
+	          </div>
+	          <div class="form-row hidden">
+	          	<input type="text" name="txtOtro" id="txtOtro" placeholder="¿Cuál?">
+	          </div>
+	          <div class="form-row">
+	          	<textarea name="txtComentarios" id="txtComentarios" cols="30" rows="10" placeholder="Escribe tus comentarios" required></textarea>
+	          </div>
+	          <div class="form-row">
+	          	<button type="submit" name="btnEnviar" id="btnEnviar">Enviar</button>
+	          </div>
+	        </form>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Importar scripts -->
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/form.js"></script>
+</body>
+</html>
